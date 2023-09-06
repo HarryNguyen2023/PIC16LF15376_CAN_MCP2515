@@ -53,22 +53,22 @@ void main(void)
         }
         else if(SW1_GetValue() == 1 && SW2_GetValue() == 1 && SW3_GetValue() == 1)
         {
-            press=0;
+            press = 0;
         }
         
-        if(strcmp((char*)rcv_buffer,"abcdefgh")==0)
+        if(strcmp((char*)rcv_buffer,"abcdefgh") == 0)
         {
             LED1_SetHigh();
             LED2_SetLow();
             LED3_SetLow();
         }
-        else if (strcmp((char*)rcv_buffer,"ijklmnop")==0)
+        else if (strcmp((char*)rcv_buffer,"ijklmnop") == 0)
         {
             LED1_SetLow();
             LED2_SetHigh();
             LED3_SetLow();
         }
-        else if (strcmp((char*)rcv_buffer,"qrstuvwx")==0)
+        else if (strcmp((char*)rcv_buffer,"qrstuvwx") == 0)
         {
             LED1_SetLow();
             LED2_SetLow();
